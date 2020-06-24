@@ -30,6 +30,8 @@ namespace BankingTests
             var account = new BankAccount();
             var openingBalance = account.GetBalance();
 
+            account.Withdraw(openingBalance);
+
             Assert.Equal(0, account.GetBalance());
         }
     }
