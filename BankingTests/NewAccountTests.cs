@@ -13,7 +13,7 @@ namespace BankingTests
         {
             // "WTCYWYH" "Write the code you wish you hd
             //given I have a brand new bank account 
-            var account = new BankAccount();
+            var account = new BankAccount(new DummyBonusCalculator());
             //When I retrive the balance
             decimal balance = account.GetBalance();
             //it has a balance of $5,000
